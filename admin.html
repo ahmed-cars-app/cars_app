@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم المدير | معارض السيارات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-body">
+
+    <nav class="top-nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-user-shield"></i>
+                <span>لوحة المدير</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+                <a href="#" class="logout-btn"><i class="fas fa-sign-out-alt"></i> خروج</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard-container container">
+        <header class="dashboard-header">
+            <h1>إحصائيات المنصة العامة</h1>
+            <p>مرحباً بك مجدداً، مدير النظام</p>
+        </header>
+
+        <!-- Stats Section -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-store"></i></div>
+                <div class="stat-info">
+                    <h3>المعارض</h3>
+                    <p class="stat-value">124</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-car"></i></div>
+                <div class="stat-info">
+                    <h3>السيارات</h3>
+                    <p class="stat-value">3,540</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                <div class="stat-info">
+                    <h3>المستخدمين</h3>
+                    <p class="stat-value">12,850</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-dollar-sign"></i></div>
+                <div class="stat-info">
+                    <h3>الإيرادات</h3>
+                    <p class="stat-value">45,200 رس</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Showrooms Management -->
+        <section class="dashboard-section">
+            <div class="section-header">
+                <h2><i class="fas fa-tasks"></i> إدارة طلبات المعارض</h2>
+            </div>
+            <div class="table-responsive">
+                <table class="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>المعرض</th>
+                            <th>تاريخ الطلب</th>
+                            <th>الحالة</th>
+                            <th>الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="car-info-cell">
+                                    <img src="https://via.placeholder.com/50" alt="Showroom">
+                                    <span>معرض السرعة القصوى</span>
+                                </div>
+                            </td>
+                            <td>2023-10-25</td>
+                            <td><span class="status-badge pending">قيد الانتظار</span></td>
+                            <td>
+                                <div class="actions">
+                                    <button class="btn-action approve" title="قبول"><i class="fas fa-check"></i></button>
+                                    <button class="btn-action reject" title="رفض"><i class="fas fa-times"></i></button>
+                                    <button class="btn-action verify" title="توثيق"><i class="fas fa-certificate"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="car-info-cell">
+                                    <img src="https://via.placeholder.com/50" alt="Showroom">
+                                    <span>معرض الرفاهية</span>
+                                </div>
+                            </td>
+                            <td>2023-10-24</td>
+                            <td><span class="status-badge active">نشط</span></td>
+                            <td>
+                                <div class="actions">
+                                    <button class="btn-action edit" title="تعديل"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-action delete" title="حذف"><i class="fas fa-trash"></i></button>
+                                    <button class="btn-action verify verified" title="موثق"><i class="fas fa-certificate"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="admin-grid-two-cols">
+            <!-- Reports Section -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-exclamation-triangle"></i> البلاغات الأخيرة</h2>
+                </div>
+                <div class="messages-list">
+                    <div class="message-item unread">
+                        <div class="msg-header">
+                            <strong>بلاغ عن إعلان مضلل</strong>
+                            <span>منذ 10 دقائق</span>
+                        </div>
+                        <p>السيارة (تويوتا كامري) المعروضة في معرض النخبة تم بيعها ولكن الإعلان لا يزال نشطاً.</p>
+                        <div class="msg-actions">
+                            <button class="btn-small">معالجة</button>
+                            <button class="btn-small btn-outline">تجاهل</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Subscriptions Section -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-ad"></i> الاشتراكات والإعلانات</h2>
+                </div>
+                <div class="subscriptions-list">
+                    <div class="sub-item">
+                        <div class="sub-info">
+                            <strong>باقة التميز الذهبية</strong>
+                            <span>معرض الرياض الدولي</span>
+                        </div>
+                        <div class="sub-status">
+                            <span class="status-badge active">نشط</span>
+                            <small>ينتهي في: 2024-01-01</small>
+                        </div>
+                    </div>
+                    <div class="sub-item">
+                        <div class="sub-info">
+                            <strong>إعلان مميز (Home Page)</strong>
+                            <span>نيسان باترول 2023</span>
+                        </div>
+                        <div class="sub-status">
+                            <span class="status-badge pending">بانتظار الدفع</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

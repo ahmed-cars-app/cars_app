@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المعارض</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-titletop: 20px; right: 20px; z-index: 100; background        <span>معارض السيارات</span>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <div class="search-wrapper">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="ابحث عن معرض محدد...">
+        </div>
+    </section>
+
+    <div class="filter-tabs">
+        <div class="tab active">كل المعارض</div>
+        <div class="tab">الأعلى تقييماً</div>
+        <div class="tab">الأحدث</div>
+    </div>
+
+    <section class="showrooms-list">
+        <div class="showroom-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_X_L8-H5O8Xv8J_p7Xv9y-X_R_X_L8-H5O8Xv8J_p7Xv9y-X" alt="Logo" class="showroom-logo">
+            <div class="showroom-details">
+                <div class="showroom-name">معرض النخبة للسيارات</div>
+                <div class="showroom-loc"><i class="fas fa-map-marker-alt"></i> الرياض، حي القادسية</div>
+                <div class="showroom-stats">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.5</span>
+                    </div>
+                    <span class="car-count">124 سيارة</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="showroom-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_X_L8-H5O8Xv8J_p7Xv9y-X_R_X_L8-H5O8Xv8J_p7Xv9y-X" alt="Logo" class="showroom-logo">
+            <div class="showroom-details">
+                <div class="showroom-name">معرض الغروب الحديث</div>
+                <div class="showroom-loc"><i class="fas fa-map-marker-alt"></i> جدة، طريق المدينة</div>
+                <div class="showroom-stats">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>4.0</span>
+                    </div>
+                    <span class="car-count">85 سيارة</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>الرئيسية</span>
+        </a>
+        <a href="showrooms.html" class="nav-item active">
+            <i class="fas fa-store"></i>
+            <span>المعارض</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="far fa-heart"></i>
+            <span>المفضلة</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="far fa-user"></i>
+            <span>حسابي</span>
+        </a>
+    </nav>
+
+</body>
+</html>
+
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المعارض - معارض السيارات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span>تصفح المعارض</span>
+        </div>
+        <div class="user-action">
+            <i class="fas fa-filter"></i>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="ابحث عن معرض محدد...">
+        </div>
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active">كل المعارض</button>
+        <button class="filter-btn">الأعلى تقييماً</button>
+        <button class="filter-btn">الأحدث</button>
+        <button class="filter-btn">قريب مني</button>
+    </div>
+
+    <div class="showroom-list">
+        <!-- Showroom 1 -->
+        <div class="showroom-card" onclick="window.location.href='showroom.html'">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR07nS9X5Y6eW6FfX98Z1m1P6X_E8p0y1_g2A&usqp=CAU" alt="Logo" class="showroom-logo">
+            <div class="showroom-details">
+                <h4>معرض النخبة للسيارات</h4>
+                <div class="showroom-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> الرياض، حي القادسية</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.8 (120 تقييم)</span>
+                    <span><i class="fas fa-car"></i> 45 سيارة متاحة</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Showroom 2 -->
+        <div class="showroom-card" onclick="window.location.href='showroom.html'">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7y6S_Qz1_t0Z8Z5z6KzJ_8F4H9_k4H_8fPg&usqp=CAU" alt="Logo" class="showroom-logo">
+            <div class="showroom-details">
+                <h4>معرض البيان الدولي</h4>
+                <div class="showroom-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> جدة، طريق المدينة</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.5 (85 تقييم)</span>
+                    <span><i class="fas fa-car"></i> 32 سيارة متاحة</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Showroom 3 -->
+        <div class="showroom-card" onclick="window.location.href='showroom.html'">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_L-S_C_u_p_Y_z_e_K_s_s_p_l_o_g_o.png" alt="Logo" class="showroom-logo">
+            <div class="showroom-details">
+                <h4>أوتو ستار للسيارات</h4>
+                <div class="showroom-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> الدمام، حي المعارض</span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.2 (210 تقييم)</span>
+                    <span><i class="fas fa-car"></i> 60 سيارة متاحة</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>الرئيسية</span>
+        </a>
+        <a href="showrooms.html" class="nav-item active">
+            <i class="fas fa-store"></i>
+            <span>المعارض</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="far fa-heart"></i>
+            <span>المفضلة</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="far fa-user"></i>
+            <span>حسابي</span>
+        </a>
+    </nav>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
